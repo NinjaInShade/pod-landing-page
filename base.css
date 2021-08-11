@@ -1,0 +1,49 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+
+  /* Neutral */
+
+  /* Typography */
+  --h1: 1.75rem;
+
+  --body: 1rem;
+  --body-line-height: 26px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--h1);
+  font-weight: 900;
+}
+
+.body-text {
+  font-size: var(--body);
+  line-height: var(--body-line-height);
+}
+@media (max-width: 375px) {
+  :root {
+    --h1: 22px;
+
+    --body: 0.938rem;
+    --body-line-height: 25px;
+  }
+}
