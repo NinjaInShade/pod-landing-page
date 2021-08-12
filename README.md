@@ -27,13 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshots/Desktop_solution.png) -->
-<!-- ![](./screenshots/Mobile_solution.png) -->
+![](./screenshots/Desktop_solution.png)
+![](./screenshots/Desktop_active_solution.png)
+![](./screenshots/Tablet_solution.png)
+![](./screenshots/Mobile_solution.png)
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-order-summary-card-TFXa8ZDRV) -->
-<!-- - Live Site URL: (https://lm-order-summary-component.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-landing-page-with-form-validation-dIWKTTqQz)
+- Live Site URL: (https://lm-pod-landing-page.netlify.app/)
 
 ## My process
 
@@ -45,7 +47,9 @@ Users should be able to:
 
 ### What I learned
 
-Not done yet.
+For this challenge, I practiced a lot of relative positioning, and getting a pixel-perfect design. I learnt how to use the "srcset" attribute where you have multiple of the same images at different widths for different screen sizes, to make it more easily responsive. I did know about it, but never actually used it before properly. Was very fun.
+
+Overall, I really liked the design and green theme, reminded me of spotify a little bit. Hope you like this challenge :D
 
 ## Author
 
