@@ -16,6 +16,52 @@
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <main></main>
+    <main class="container">
+      <div class="inner-container">
+        <nav class="navbar">
+          <a href="./index.html">
+            <img
+              src="./assets/desktop/logo.svg"
+              alt="Pod logo. Green circle with lines going up and down representing music frequencies."
+            />
+          </a>
+        </nav>
+        <header class="header">
+          <h1 class="header-title"><span>Publish your podcasts</span> everywhere.</h1>
+          <p class="body-text header-description">
+            Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts,
+            Google Podcasts, Pocket Casts and more!
+          </p>
+          <form onsubmit="validateForm(event)" id="subscribe-form">
+            <div class="input-container">
+              <input type="text" class="body-s-text input" placeholder="Email address" />
+              <button class="btn btn-primary" type="submit">Request Access</button>
+            </div>
+            <small class="small-text error-text">Input is valid</small>
+          </form>
+          <ul class="header-platforms">
+            <li class="header-platform">
+              <img src="./assets/desktop/spotify.svg" alt="Spotify podcast logo" />
+            </li>
+            <li class="header-platform">
+              <img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast logo" />
+            </li>
+            <li class="header-platform">
+              <img src="./assets/desktop/google-podcasts.svg" alt="Google podcasts logo" />
+            </li>
+            <li class="header-platform">
+              <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts podcast logo" />
+            </li>
+          </ul>
+        </header>
+        <img
+          src="./assets/desktop/image-host.jpg"
+          class="header-img"
+          alt="Man speaking into a mic, recording a podcast with a green overlay to give the vibe of the brand colour."
+        />
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
