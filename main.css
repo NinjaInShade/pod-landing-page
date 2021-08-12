@@ -23,8 +23,14 @@
 
 .header-img {
   position: absolute;
-  max-width: 100%;
+  max-width: 888px;
   top: 0;
+  right: 0;
+}
+
+.header-dots {
+  position: absolute;
+  bottom: -52px;
   right: 0;
 }
 
@@ -99,4 +105,53 @@
 /* Form invalid styles */
 .subscribe-form-invalid .error-text {
   visibility: visible;
+}
+
+@media (max-width: 1025px) {
+  .header-img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 0 0 40px;
+    min-height: 1024px;
+  }
+
+  .inner-container {
+    min-height: 715px;
+  }
+
+  .navbar {
+    top: 0;
+  }
+
+  .header {
+    padding: 93px 0 0 0;
+    max-width: 635px;
+  }
+
+  .header-description {
+    margin-top: 31px;
+  }
+
+  .header-dots {
+    bottom: -258px;
+    left: 0;
+  }
+
+  .header-img {
+    top: unset;
+    object-fit: cover;
+    max-width: 491px;
+    /* Account for padding at top */
+    height: calc(100% + 50px);
+    right: 0;
+    bottom: 0;
+  }
+
+  .header-platform:not(:last-child) {
+    margin-right: 30px;
+  }
 }
