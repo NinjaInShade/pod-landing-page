@@ -34,10 +34,16 @@
           </p>
           <form onsubmit="validateForm(event)" id="subscribe-form">
             <div class="input-container">
-              <input type="text" class="body-s-text input" placeholder="Email address" />
+              <input
+                type="text"
+                class="body-s-text input"
+                placeholder="Email address"
+                id="subscribe-form-email"
+                name="Email address"
+              />
               <button class="btn btn-primary" type="submit">Request Access</button>
             </div>
-            <small class="small-text error-text">Input is valid</small>
+            <small class="small-text error-text" id="subscribe-form-error">Input is valid</small>
           </form>
           <ul class="header-platforms">
             <li class="header-platform">
