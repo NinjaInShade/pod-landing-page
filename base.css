@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Chivo', sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -12,38 +12,64 @@
   font-size: 16px;
 
   /* Primary */
+  --green: #54e6af;
 
   /* Neutral */
+  --black: #121725;
+  --dark-gray: #2c344b;
+  --gray: #5a668a;
+  --light: #c2cbe5;
 
   /* Typography */
-  --h1: 1.75rem;
+  --h1: 3.25rem;
+  --h1-line-height: 62px;
 
-  --body: 1rem;
-  --body-line-height: 26px;
+  --body: 1.125rem;
+  --body-line-height: 28px;
+
+  --body-s: 0.875rem;
+  --body-s-line-height: 28px;
+
+  --error: 0.75rem;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: var(--black);
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
   font-size: var(--h1);
-  font-weight: 900;
+  line-height: var(--h1-line-height);
+  font-weight: 300;
 }
 
 .body-text {
   font-size: var(--body);
   line-height: var(--body-line-height);
 }
+
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+}
+
+.error-text {
+  font-size: var(--error);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1: 3rem;
+    --h1-line-height: 56px;
+  }
+}
+
 @media (max-width: 375px) {
   :root {
-    --h1: 22px;
+    --h1: 1.625rem;
+    --h1-line-height: 38px;
 
-    --body: 0.938rem;
+    --body: 0.9375rem;
     --body-line-height: 25px;
   }
 }
